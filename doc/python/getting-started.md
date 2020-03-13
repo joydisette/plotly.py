@@ -151,6 +151,9 @@ jupyter labextension install plotlywidget@1.5.4 --no-build
 
 # Build extensions (must be done to activate extensions since --no-build is used above)
 jupyter lab build
+# Run the command below  instead if build times-out / is too slow but keep in mind it's only for the local use.
+#DO NOT RUN on a remote server
+jupyter lab build --minimize = False
 
 # Unset NODE_OPTIONS environment variable
 # (OS X/Linux)
